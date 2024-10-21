@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="lid one"></div>
+        <div class="lid two"></div>
+        <div class="envelope"></div>
+        <div class="letter" onclick="showPopup(1)">
+            <p><span class="bracket">[</span> <span class="bracket">]</span><br>Coba dipecet <br>yang itu</p>
+        </div>
+    </div>
+
+    <div id="letterPopup" class="letter-popup">
+        <div class="popup-content">
+            <p id="popupText"></p>
+            <button onclick="closePopup()">Tutup</button>
+            <button onclick="switchLetter()">Pindah Surat</button>
+        </div>
+    </div>
+
+    <script src="java.js"></script>
+</body>
+</html>
